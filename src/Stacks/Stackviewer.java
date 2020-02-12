@@ -1,4 +1,4 @@
-
+package Stacks;
 public class Stackviewer<T> {
 	ResizableStack<T> thisstack;
 	
@@ -43,18 +43,17 @@ public class Stackviewer<T> {
 	public void removebottomitem()
 	{
 		ResizableStack<T> s2 = new ResizableStack<T>(thisstack.size());
-		ResizableStack<T> s3 = new ResizableStack<T>(thisstack.size());
 		int tempsize = thisstack.size();
 		for (int i = 1; i < tempsize; i++)
 		{
 			s2.push(thisstack.pop());
 		}
 		int tempsize2 = s2.size();
+		thisstack.pop();
 		for (int i = 0; i < tempsize2; i++)
 		{
-			s3.push(s2.pop());
+			thisstack.push(s2.pop());
 		}
-		thisstack = s3;	
 	}
 	
 	@SuppressWarnings("unchecked")
