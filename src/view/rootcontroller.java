@@ -17,6 +17,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn.CellDataFeatures;
@@ -47,6 +48,7 @@ public class rootcontroller {
 	 
 	 @FXML
 	 TableView<ObservableList> stattable;
+	 
 		
 	 private TableColumn [] tableColumns;
 	 private List<String> columns;
