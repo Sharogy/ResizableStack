@@ -192,17 +192,30 @@ public class Stackviewer<T> {
 	public static void main (String[] argz)
 	{	
 		System.out.println("viewtopitem");
-		for (int i = 0; i<10; i++)
-		{
-			int size = (int) Math.pow(2, i);
-			ResizableStack<Integer> rs = Stackviewer.randomstack(10000*size);
-			Random random = new Random();
-			int randomindex = random.nextInt(rs.size());
-			Stackviewer sv = new Stackviewer(rs);
-			Stopwatch timer = new Stopwatch();
-			sv.removenthitem(randomindex);
-			double time = timer.elapsedTime();
-			System.out.print(time + ", ");
-		}
+		ResizableStack<Object> rs = new ResizableStack<Object>(5);
+		rs.push(1);
+		rs.push(2);
+		rs.push(3);
+		rs.push(4);
+		rs.push(5);	
+		Stackviewer sv = new Stackviewer(rs);
+		sv.removebottomitem();
+		sv.removebottomitem();
+		System.out.println(sv.viewbottomitem());
+		//System.out.println(sv.thisstack.size());
+		
+		
+//		for (int i = 0; i<10; i++)
+//		{
+//			int size = (int) Math.pow(2, i);
+//			ResizableStack<Integer> rs = Stackviewer.randomstack(10000*size);
+//			Random random = new Random();
+//			int randomindex = random.nextInt(rs.size());
+//			Stackviewer sv = new Stackviewer(rs);
+//			Stopwatch timer = new Stopwatch();
+//			sv.removenthitem(randomindex);
+//			double time = timer.elapsedTime();
+//			System.out.print(time + ", ");
+//		}
 	}
 }
