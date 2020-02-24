@@ -7,7 +7,7 @@ push() = O(N)
 5.2
 viewtopitem() = O(1) = 2
 removetopitem() = O(1) = 1
-viewbottomitem() = O(N) = 3N
-removebottomitem() = O(N) = 3N
-viewNthitem() = O(N) = 3N/2
-removeNthitem() = O(N) = 3N/2
+viewbottomitem() = O(N) = 4N
+removebottomitem() = O(N) = 4N
+viewNthitem() = O(N) = 4N/2
+removeNthitem() = O(N) = 4N/2
