@@ -1,4 +1,4 @@
-package Util;
+package Application;
 
 import javafx.stage.*;
 import javafx.scene.*;

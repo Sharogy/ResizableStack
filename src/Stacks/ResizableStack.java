@@ -68,11 +68,17 @@ public class ResizableStack<Item> {
 		return top;
 	}
 	
+	
+
+	
+	
 	@Override
     public String toString() {
         return "Resizablestack of " + stack.getClass().getComponentType().getName()
             + "[" + stack.length + "]";
     }
+	
+	
 	
 	public static void main (String[] argz)
 	{
